@@ -97,7 +97,6 @@ Public Sub SharePDF
 	'Log(NumberFormat2(filesize/1024, 1, 2, 0, False) & "KB")
 	Dim in As Intent
 	in.Initialize(in.ACTION_SEND, "")
-	provider.SetFileUriAsIntentData(in, File.Combine(provider.SharedFolder, "example.pdf"))
 	in.SetPackage("com.whatsapp")
 	in.PutExtra("android.intent.extra.STREAM", provider.GetFileUri("example.pdf"))
 	in.SetType("application/pdf")
