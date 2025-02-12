@@ -22,7 +22,6 @@ Version=12.8
 	#SupportedOrientations: portrait
 	#CanInstallToExternalStorage: False
 #End Region
-#AdditionalJar: com.pos, ReferenceOnly
 
 #Region  Activity Attributes 
 	#FullScreen: False
