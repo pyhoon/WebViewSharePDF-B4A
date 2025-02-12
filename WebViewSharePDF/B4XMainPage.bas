@@ -54,9 +54,10 @@ With B4X, anyone who wants to, can develop real-world solutions.
 End Sub
 
 Private Sub Button1_Click
-	Dim x As B4XView = WebView1
-	Dim bmp As B4XBitmap = x.Snapshot
-	bmp = bmp.Resize(600, 600, True)
+	'Dim x As B4XView = WebView1
+	'Dim bmp As B4XBitmap = x.Snapshot
+	'bmp = bmp.Resize(600, 600, True)
+	Dim bmp As B4XBitmap = WebView1.CaptureBitmap
 	File.Delete(File.DirInternal, "example.pdf")
 	CreatePDF(bmp)
 End Sub
